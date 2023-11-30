@@ -12,12 +12,12 @@
     </header>
     <main>
         <article>
-            <img src="img/team-realesrgan-x4plus.png" alt="garbage truck image">
+            <!-- <img src="img/team-realesrgan-x4plus.png" alt="garbage truck image"> -->
             <h3>Személyes adatok:</h3>
-            <ul>
+            <ul class="column">
                 <li>Név: Ótott-Kovács Tamás</li>
                 <li>Lakhely: Szeged, Magyarország</li>
-                <li id="agebox">majd ide lesz írva hány éves vagyok</li>
+                <li id="agebox"></li>
                 <li>Hobbik: Programozás, játék, Android modding és minden más, ami Tech</li>
             </ul>
         </article>
@@ -138,7 +138,7 @@
         </article>
         <article>
             <h3>Kapcsolat:</h3>
-            <ul>
+            <ul class="column">
                 <li>E-mail: <a href="mailto:otottkovi2@hotmail.com">otottkovi2@hotmail.com</a></li>
                 <li>Telefon: +36 70 888 1131</li>
                 <li>Telegram: otottkovi2</li>
@@ -146,5 +146,14 @@
             </ul>
         </article>
     </main>
+    <footer>
+        <script>
+            window.onload = () => {
+                const birthYear = 2004;
+                let age = document.querySelector('#agebox');
+                age.innerHTML = (new Date().getFullYear() - birthYear) + " éves  vagyok";
+            }
+        </script>
+    </footer>
 </body>
 </html>
