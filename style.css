@@ -1,6 +1,7 @@
 body {
     font-size: 12pt;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 100vw;
 }
 
 
@@ -8,6 +9,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 img {
@@ -18,14 +20,14 @@ img {
 article ul {
     margin-left: 2rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
     list-style: none;
     justify-content: space-around;
 }
 
-.column {
-    flex-direction: column;
-    list-style: circle;
+.row {
+    flex-direction: row;
 }
 
 li > ul {
