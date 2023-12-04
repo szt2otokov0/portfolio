@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="catppuccin.css">
     <link rel="stylesheet" href="style.css">
-    <title>Ótott-Kovács Tamás</title>
+    <title>Portfólió</title>
 </head>
 <body>
     <header>
-        <h1>Portfólió</h1>
+        <h1>Hello, Ótott-Kovács Tamás vagyok!</h1>
     </header>
     <main>
         <article>
-            <!-- <img src="img/team-realesrgan-x4plus.png" alt="garbage truck image"> -->
             <h3>Személyes adatok:</h3>
             <ul>
                 <li>Név: Ótott-Kovács Tamás</li>
@@ -157,11 +157,15 @@
         </article>
     </main>
     <footer>
+        <div>
+            <div>Theme:</div>
+            <a href="http://catppuccin.com">Catpuccin Mocha</a>
+        </div>
         <script>
             window.onload = () => {
                 const birthYear = 2004;
                 let age = document.querySelector('#agebox');
-                age.innerHTML = (new Date().getFullYear() - birthYear) + " éves  vagyok";
+                age.innerHTML = "Életkor:" + (new Date().getFullYear() - birthYear) + " év";
             }
         </script>
     </footer>
