@@ -13,8 +13,9 @@ main {
 }
 
 img {
-    max-width: 75%;
+    height: 20rem;
     display: block;
+    margin-right: 15vw;
 }
 
 article ul {
@@ -27,7 +28,9 @@ article ul {
 }
 
 .row {
+    display: flex;
     flex-direction: row;
+    justify-content: space-around;
 }
 
 li > ul {
